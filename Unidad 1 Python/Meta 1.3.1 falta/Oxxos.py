@@ -1,0 +1,61 @@
+#Creacion de listas con calles,numero y codigo postal
+#los codigos y calles repetidas se omitiran
+calle = ["Av.Paseo Ensenada", "Calle Cantil", "Av. Paseo Playas", "Calle Esperanza", "Paseo Pedregal", "Parque Mexico", "Paseo de las playas", "Calle del Pedregal", "Jardines Playas de Tijuana", "Calle del Coronado", "Calle 18 de Marzo", "Zona centro", "Villa del Mar", "Los Laureles", "Av. Benito Juárez", "Zona Rio", "Av. del Agua", "Lazaro Cardenas", "Calle Pizarra", "Calle Segunda", "Calle Tercera"]
+numExterior = [111,920, "S/N", 678,999, "320-1", "S/N", "208-A", "S/N", "S/N", "S/N", 20, "S/N", "S/N", 10, 687, 798, "S/N", 126, 400, "S/N", 109, 103, 98, 71]
+codigoPostal = [22506, 22609, 22998, 22555, 22789, 22123, 22667, 22334, 22889, 22112, 22907]
+
+#Tuplas de oxxos
+Oxxo1  = (calle[0],  numExterior[0],  codigoPostal[0],  32.5624351745312, -116.603736549332)
+Oxxo2  = (calle[1],  numExterior[1],  codigoPostal[1],  32.5661618089732, -116.585348818457)
+Oxxo3  = (calle[2],  numExterior[2],  codigoPostal[1],  32.5673645912331, -116.585348818222)
+Oxxo4  = (calle[3],  numExterior[3],  codigoPostal[2],  32.5716141598604, -116.611778712245)
+Oxxo5  = (calle[4],  numExterior[4],  codigoPostal[2],  32.5752088210254, -116.610178542457)
+Oxxo6  = (calle[5],  numExterior[5],  codigoPostal[0],  32.5740402171235, -116.624399600112)
+Oxxo7  = (calle[6],  numExterior[6],  codigoPostal[3],  32.5588660799873, -116.621384911776)
+Oxxo8  = (calle[7],  numExterior[7],  codigoPostal[2],  32.568946124366,   116.625244342654)
+Oxxo9  = (calle[6],  numExterior[8],  codigoPostal[4],  32.564812910333,  -116.626165400234)
+Oxxo10 = (calle[8],  numExterior[9],  codigoPostal[0],  32.5741765344532, -116.627363357876)
+Oxxo11 = (calle[9],  numExterior[10], codigoPostal[1],  32.5706647357653, -116.60403948789)
+Oxxo12 = (calle[10], numExterior[11], codigoPostal[5],  32.5660668722009, -116.631501711940)
+Oxxo13 = (calle[11], numExterior[12], codigoPostal[4],  32.5704611544631, -116.628433264584)
+Oxxo14 = (calle[12], numExterior[13], codigoPostal[6],  32.5584801559932, -116.630751942965)
+Oxxo15 = (calle[13], numExterior[14], codigoPostal[0],  32.5669499512385, -116.585292342898)
+Oxxo16 = (calle[14], numExterior[15], codigoPostal[0],  32.5735962113563, -116.631327308853)
+Oxxo17 = (calle[11], numExterior[16], codigoPostal[7],  32.5658099733463, -116.647784227345)
+Oxxo18 = (calle[15], numExterior[17], codigoPostal[0],  32.5758255900094, -116.627228246056)
+Oxxo19 = (calle[16], numExterior[18], codigoPostal[6],  32.5616962936263, -116.634289057696)
+Oxxo20 = (calle[17], numExterior[19], codigoPostal[2],  32.5713606623252, -116.620024915368)
+Oxxo21 = (calle[18], numExterior[20], codigoPostal[8],  32.5011383687956, -116.570866015502)
+Oxxo22 = (calle[19], numExterior[21], codigoPostal[9],  32.5575919034534, -116.417352036363)
+Oxxo23 = (calle[19], numExterior[22], codigoPostal[8],  32.5507092289089, -116.344677865387)
+Oxxo24 = (calle[19], numExterior[23], codigoPostal[10], 32.5321233523432, -116.308749061758)
+Oxxo25 = (calle[20], numExterior[24], codigoPostal[10], 32.5369422848973, -116.06377994611)
+
+#creacion de una lista de tuplas
+OxxosList = [Oxxo1]
+OxxosList.append(Oxxo2)
+OxxosList.append(Oxxo3)
+OxxosList.append(Oxxo4)
+OxxosList.append(Oxxo5)
+OxxosList.append(Oxxo6)
+OxxosList.append(Oxxo7)
+OxxosList.append(Oxxo8)
+OxxosList.append(Oxxo9)
+OxxosList.append(Oxxo10)
+OxxosList.append(Oxxo11)
+OxxosList.append(Oxxo12)
+OxxosList.append(Oxxo13)
+OxxosList.append(Oxxo14)
+OxxosList.append(Oxxo15)
+OxxosList.append(Oxxo16)
+OxxosList.append(Oxxo17)
+OxxosList.append(Oxxo18)
+OxxosList.append(Oxxo19)
+OxxosList.append(Oxxo20)
+OxxosList.append(Oxxo21)
+OxxosList.append(Oxxo22)
+OxxosList.append(Oxxo23)
+OxxosList.append(Oxxo24)
+OxxosList.append(Oxxo25)
+
+print(OxxosList) 
