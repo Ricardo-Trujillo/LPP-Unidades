@@ -1,0 +1,130 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class node4 as "main.Alumno" {
+   matricula: 
+   materias: 
+   nombre: 
+   facultad: 
+   __init__(self, nombre=''): 
+   getMatricula(self): 
+   setMatricula(self, matricula): 
+   getNombre(self): 
+   setNombre(self, nombre): 
+   getFacultad(self): 
+   setFacultad(self, facultad): 
+   getMaterias(self): 
+   addMateria(self, nombre, id): 
+}
+class node2 as "main.Facultad" {
+   carrera: 
+   nombre: 
+   __init__(self, nombre='', carrera=0): 
+   getNombre(self): 
+   setNombre(self, nombre): 
+   getCarrera(self): 
+   setCarrera(self, carrera): 
+}
+class node6 as "main.Materia" {
+   nombreMateria: 
+   id: 
+   __init__(self, nombreMateria='', id=0): 
+   getNombreMateria(self): 
+   setNombreMateria(self, nombreMateria): 
+   getId(self): 
+   setId(self, id): 
+}
+class node1 as "main.Materias" {
+   materias: 
+   __init__(self, nombre, id): 
+   getMaterias(self): 
+   setMaterias(self, materias): 
+}
+class node3 as "main.Persona" {
+   estatura: 
+   sexo: 
+   nombre: 
+   edad: 
+   __init__(self, nombre=' ', edad=0, sexo=' ', estatura=0): 
+   getNombre(self): 
+   setNombre(self, nombre): 
+   getEdad(self): 
+   setEdad(self, edad): 
+   getSexo(self): 
+   setSexo(self, sexo): 
+   getEstatura(self): 
+   setEstatura(self, estatura): 
+}
+class node5 as "main.Profesor" {
+   numTrabajador: 
+   facultad: 
+   __init__(self, nombre=''): 
+   getFacultad(self): 
+   getFacultad(self): 
+   setFacultad(self, facultad): 
+   setFacultad(self, facultad): 
+   getNumTrabajador(self): 
+   setNumTrabajador(self, numero): 
+}
+class node7 as "main.Trabajador" {
+   salario: 
+   antiguedad: 
+   numTrabajador: 
+   __init__(self, nombre='', edad=0, sex='', estatura=0): 
+   getSalario(self): 
+   setSalario(self, salario): 
+   getAntiguedad(self): 
+   setAntiguedad(self, antiguedad): 
+}
+class node9 as "main.Universidad" {
+   facultades: 
+   nombre: 
+   __init__(self, nombre): 
+   getNombre(self): 
+   setNombre(self, nombre): 
+   getFacultades(self): 
+   addFacultad(self, nombre, carrera): 
+}
+class object {
+   __doc__: 
+   __dict__: 
+   __slots__: 
+   __module__: 
+   __annotations__: 
+   __class__(self: _T): 
+   __class__(self, __type: Type[object]): 
+   __init__(self): 
+   __new__(cls: Type[_T]): 
+   __setattr__(self, name: str, value: Any): 
+   __eq__(self, o: object): 
+   __ne__(self, o: object): 
+   __str__(self): 
+   __repr__(self): 
+   __hash__(self): 
+   __format__(self, format_spec: str): 
+   __getattribute__(self, name: str): 
+   __delattr__(self, name: str): 
+   __sizeof__(self): 
+   __reduce__(self): 
+   __reduce_ex__(self, protocol: SupportsIndex): 
+   __reduce_ex__(self, protocol: int): 
+   __dir__(self): 
+   __init_subclass__(cls): 
+}
+class node0 as "typing.Hashable" {
+   __hash__(self): 
+}
+
+node4   ^-[#595959,plain]-  node3  
+node2   ^-[#595959,plain]-  object 
+node6   ^-[#595959,plain]-  object 
+node1   ^-[#595959,plain]-  object 
+node3   ^-[#595959,plain]-  object 
+node5   ^-[#595959,plain]-  node7  
+node7   ^-[#595959,plain]-  node3  
+node9   ^-[#595959,plain]-  object 
+object  ^-[#595959,dashed]-  node0  
+@enduml

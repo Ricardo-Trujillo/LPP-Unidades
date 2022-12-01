@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#C:/Users/vicma/PycharmProjects/pythonProject1/main.py</OriginalElement>
+  <nodes>
+    <node x="1147.7005518134006" y="445.4366050822206">typing.Hashable</node>
+    <node x="1379.8692707709972" y="470.84158438933554">main.Materias</node>
+    <node x="1101.055294969286" y="620.4120418198415">main.Facultad</node>
+    <node x="427.15955768526965" y="145.3990933562817">main.Persona</node>
+    <node x="263.9162882888151" y="559.6739826673398">main.Alumno</node>
+    <node x="-73.61372917569726" y="574.7131416376712">main.Profesor</node>
+    <node x="510.3054143278256" y="527.3104978545987">main.Materia</node>
+    <node x="59.84325982177947" y="284.53926474035984">main.Trabajador</node>
+    <node x="819.462558369672" y="-14.540830276969956">object</node>
+    <node x="821.4892127444573" y="611.5552129501998">main.Universidad</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.Alumno" target="main.Persona" relationship="REALIZATION">
+      <point x="-2.882888151134466E-4" y="-159.49998266733985" />
+      <point x="356.916" y="511.039" />
+      <point x="397.0" y="511.039" />
+      <point x="397.0" y="304.899" />
+      <point x="-159.49955768526962" y="-9.335628169537813E-5" />
+    </edge>
+    <edge source="main.Persona" target="object" relationship="REALIZATION">
+      <point x="159.50044231473032" y="-9.335628169537813E-5" />
+      <point x="790.0" y="304.899" />
+      <point x="790.0" y="265.959" />
+      <point x="-133.99955836967206" y="-1.6972303004081368E-4" />
+    </edge>
+    <edge source="main.Facultad" target="object" relationship="REALIZATION">
+      <point x="-108.50029496928596" y="-4.1819841499091126E-5" />
+      <point x="1070.0" y="713.912" />
+      <point x="1070.0" y="594.0550000000001" />
+      <point x="790.0" y="594.0550000000001" />
+      <point x="790.0" y="265.959" />
+      <point x="-133.99955836967206" y="-1.6972303004081368E-4" />
+    </edge>
+    <edge source="main.Profesor" target="main.Trabajador" relationship="REALIZATION">
+      <point x="36.95698899747673" y="-115.5" />
+      <point x="-145.5" y="104.5" />
+    </edge>
+    <edge source="object" target="typing.Hashable" relationship="REALIZATION">
+      <point x="134.0" y="206.47743535919054" />
+      <point x="-71.5" y="0.0" />
+    </edge>
+    <edge source="main.Materias" target="object" relationship="REALIZATION">
+      <point x="-86.5002707709973" y="38.15841561066446" />
+      <point x="1070.0" y="569.5" />
+      <point x="1070.0" y="594.0550000000001" />
+      <point x="790.0" y="594.0550000000001" />
+      <point x="790.0" y="265.959" />
+      <point x="-133.99955836967206" y="-1.6972303004081368E-4" />
+    </edge>
+    <edge source="main.Universidad" target="object" relationship="REALIZATION">
+      <point x="-108.50021274445726" y="-2.1295019985245744E-4" />
+      <point x="790.0" y="705.055" />
+      <point x="790.0" y="265.959" />
+      <point x="-133.99955836967206" y="-1.6972303004081368E-4" />
+    </edge>
+    <edge source="main.Materia" target="object" relationship="REALIZATION">
+      <point x="124.49958567217436" y="-4.978545987341931E-4" />
+      <point x="790.0" y="620.81" />
+      <point x="790.0" y="265.959" />
+      <point x="-133.99955836967206" y="-1.6972303004081368E-4" />
+    </edge>
+    <edge source="main.Trabajador" target="main.Persona" relationship="REALIZATION">
+      <point x="152.99974017822055" y="-2.647403598530218E-4" />
+      <point x="397.0" y="389.039" />
+      <point x="397.0" y="304.899" />
+      <point x="-159.49955768526962" y="-9.335628169537813E-5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5962355798421373" showDependencies="false" x="749.5" y="442.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+
